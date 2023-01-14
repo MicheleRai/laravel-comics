@@ -14,5 +14,67 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $menu = config('menu');
+    return view('guest.home', [
+        'menu' => $menu,
+    ])->name('home');
 });
+Route::get('/comics', function () {
+    $menu = config('menu');
+    $comics = config('comics');
+    return view('guest.comics', [
+        'menu' => $menu,
+        'comic' => $comics,
+    ]);
+})->name('comics');
+Route::get('/caracters', function () {
+    $menu = config('menu');
+    return view('guest.caracters', [
+        'menu' => $menu,
+    ]);
+})->name('caracters');
+Route::get('/movies', function () {
+    $menu = config('menu');
+    return view('guest.movies', [
+        'menu' => $menu,
+    ]);
+})->name('movies');
+Route::get('/tv', function () {
+    $menu = config('menu');
+    return view('guest.tv', [
+        'menu' => $menu,
+    ]);
+})->name('tv');
+Route::get('/collectibles', function () {
+    $menu = config('menu');
+    return view('guest.collectibles', [
+        'menu' => $menu,
+    ]);
+})->name('collectibles');
+Route::get('/videos', function () {
+    $menu = config('menu');
+    return view('guest.videos', [
+        'menu' => $menu,
+    ]);
+})->name('videos');
+Route::get('/fans', function () {
+    $menu = config('menu');
+    return view('guest.fans', [
+        'menu' => $menu,
+    ]);
+})->name('fans');
+Route::get('/news', function () {
+    $menu = config('menu');
+    return view('guest.news', [
+        'menu' => $menu,
+    ]);
+})->name('news');
+Route::get('/games', function () {
+    $menu = config('menu');
+    return view('guest.games', [
+        'menu' => $menu,
+    ]);
+})->name('games');
+
+
+

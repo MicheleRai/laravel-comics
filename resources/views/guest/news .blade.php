@@ -2,6 +2,6 @@
 
 @section('content')
 
-<div>questa e la home</div>
+    <h1>sono la pagina delle news</h1>
 
 @endsection

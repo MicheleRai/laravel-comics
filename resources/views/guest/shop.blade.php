@@ -2,6 +2,6 @@
 
 @section('content')
 
-<div>questa e la home</div>
+    <h1>sono la pagina dello shop</h1>
 
 @endsection
