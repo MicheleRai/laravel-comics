@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <h1>sono la pagina dei games</h1>
+    <h1>sono la home page</h1>
 
 @endsection

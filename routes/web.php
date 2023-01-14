@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $menu = config('menu');
-    return view('guest.home', [
+    return view('home', [
         'menu' => $menu,
     ])->name('home');
 });
