@@ -10,8 +10,8 @@ return [
         'label' => 'Comics',
     ],
     [
-        'route' => 'movie',
-        'label' => 'Movie',
+        'route' => 'movies',
+        'label' => 'Movies',
     ],
     [
         'route' => 'tv',
