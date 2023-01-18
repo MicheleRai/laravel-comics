@@ -34,7 +34,7 @@ Route::get('/comics', function () {
     $comics = config('comics');
     return view('guest.comics', [
         'menu' => $menu,
-        'comic' => $comics,
+        'comics' => $comics,
     ]);
 })->name('comics');
 
