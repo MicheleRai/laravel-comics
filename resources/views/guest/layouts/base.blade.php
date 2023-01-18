@@ -12,6 +12,7 @@
     <main>
         @yield('content')
     </main>
+    @include('guest.partials.iconBar')
     @include('guest.partials.footer')
 </body>
 </html>

@@ -1,10 +1,9 @@
-<nav>
-    <ul class="header-text">
 
-        @foreach ($menu as $item)
-            <li><a href="{{ route($item['route']) }}">{{ $item['label'] }}</a></li>
+<ul class="header-text">
 
-        @endforeach
+    @foreach ($menu as $item)
+        <li><a href="{{ route($item['route']) }}">{{ $item['label'] }}</a></li>
 
-    </ul>
-</nav>
+    @endforeach
+
+</ul>

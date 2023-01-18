@@ -1,3 +1,215 @@
-body div {
-  background: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .container-header {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  max-width: 1200px;
+  margin: auto;
+}
+body .container-header a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container-header a img {
+  height: 75%;
+  margin: auto;
+}
+body .container-header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  height: 100%;
+}
+body .container-header ul li {
+  height: 100%;
+}
+body .container-header ul li a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body .container-header ul li a:hover {
+  color: #0282F9;
+  border-color: #0282F9;
+}
+body .jumbo-bg {
+  background-image: url(/images/jumbotron.jpg?9b3ac9ec673a8ec0c2c6eef1f6ea6bb4);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+body .container-main {
+  font-family: "Roboto", sans-serif;
+  background-color: #1C1C1C;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container-main .content-main {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 4rem 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container-main .content-main .title {
+  position: absolute;
+  top: -33px;
+  background-color: #0282F9;
+  padding: 0.7rem 0.5rem;
+}
+body .container-main .content-main .cards-container {
+  flex: 0 0 25%;
+  margin: 1rem 0;
+  padding-top: 1rem;
+}
+body .container-main .content-main .cards-container .card {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+body .container-main .content-main .cards-container .card:hover {
+  background: white;
+  color: #0282F9;
+}
+body .container-icon {
+  font-family: "Roboto", sans-serif;
+  background-color: #0282F9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+body .container-icon .content-icon {
+  max-width: 1200px;
+  height: 100%;
+}
+body .container-icon .content-icon ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+body .container-icon .content-icon ul li {
+  border-bottom: 5px solid #0282F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+body .container-icon .content-icon ul li:hover {
+  border-color: white;
+}
+body .container-icon .content-icon ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+body .container-icon .content-icon ul li a img {
+  height: 60px;
+}
+body footer {
+  font-family: "Roboto", sans-serif;
+  background: black;
+  background-image: url(/images/footer-bg.jpg?30a5c2238c63921788be216d1794abf7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+body footer .footer-container {
+  background-image: url(/images/dc-logo-bg.png?571b04c07ce56ce40d7896d4da7b2bc0);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  gap: 3rem;
+  padding-top: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+body footer .footer-container h3 {
+  margin-top: 1rem;
+}
+body footer .footer-container ul {
+  list-style: none;
+  line-height: 1.5rem;
+}
+body footer .footer-container ul a {
+  text-decoration: none;
+  color: #959595;
+}
+body footer .footer-container ul a:hover {
+  color: #0282F9;
+}
+body footer .social-container {
+  background-color: #303030;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: auto 20rem;
+}
+body footer .social-container .social-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+body footer .social-container .social-content button {
+  color: white;
+  background-color: #303030;
+  border-color: #0282F9;
+  padding: 9px 5px;
+}
+body footer .social-container .social-content button:hover {
+  background-color: white;
+  color: black;
+}
+body footer .social-container .social-content .social-icon {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+body footer .social-container .social-content .social-icon span {
+  color: #0282F9;
+}
+body footer .social-container .social-content .social-icon img {
+  cursor: pointer;
+  border: 3px solid #303030;
+  border-radius: 100%;
+}
+body footer .social-container .social-content .social-icon img:hover {
+  border-color: #0282F9;
+  background-color: white;
 }

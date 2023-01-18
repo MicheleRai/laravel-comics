@@ -21,12 +21,12 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/caracters', function () {
+Route::get('/characters', function () {
     $menu = config('menu');
-    return view('guest.caracters', [
+    return view('guest.characters', [
         'menu' => $menu,
     ]);
-})->name('caracters');
+})->name('characters');
 
 
 Route::get('/comics', function () {

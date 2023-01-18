@@ -2,6 +2,22 @@
 
 @section('content')
 
-    <h1>sono la pagina dei comics</h1>
+<div class="container-main">
+    <div class="content-main">
+      <h1
+        class="title"
+      >
+        CURRENT SERIES
+      </h1>
+      {{-- <cardPage
+        v-for="objCard in arrCards"
+        :key="objCard.titolo"
+        class="cards-container"
+        :image-url="objCard.thumb"
+        :title="objCard.series"
+      /> --}}
+    </div>
+</div>
+
 
 @endsection
